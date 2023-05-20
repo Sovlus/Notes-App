@@ -16,6 +16,10 @@ const Main = () => {
       setInputValue("");
     }
   };
+
+  const usun = (id) => {
+    const 
+  }
 };
 
 export default Main;
