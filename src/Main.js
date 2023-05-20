@@ -34,6 +34,16 @@ const Main = () => {
         />
         <button onClick={dodajNotatke}>Dodaj Notatke</button>
       </div>
+      <div className='notes'>
+        {notes.map((note) => (
+          <div className='note' key={note.id}>
+            <p>{note.content}</p>
+            <button onClick={() => usun(note.id)}>
+              <FaTrash />
+            </button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
