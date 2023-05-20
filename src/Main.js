@@ -4,6 +4,7 @@ import { FaTrash } from "react-icons/fa";
 
 const Main = () => {
   const [notes, setNotes] = useState([]);
+  const [inputValue, setImportValue] = useState("");
 };
 
 export default Main;
