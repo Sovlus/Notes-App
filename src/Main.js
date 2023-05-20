@@ -18,7 +18,7 @@ const Main = () => {
   };
 
   const usun = (id) => {
-    const updatedNotes = notes.filter((none) => notes.id !== id);
+    const updatedNotes = notes.filter((note) => note.id !== id);
     setNotes(updatedNotes);
   };
 
