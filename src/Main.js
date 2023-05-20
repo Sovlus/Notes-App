@@ -7,13 +7,13 @@ const Main = () => {
   const [inputValue, setImportValue] = useState("");
 
   const dodajNotatke = () => {
-    if (inputValue.trim() !== '') {
-        const nowa = {
-            id: uuidv4(),
-            content: inputValue;
-        }
+    if (inputValue.trim() !== "") {
+      const nowa = {
+        id: uuidv4(),
+        content: inputValue,
+      };
     }
-  }
+  };
 };
 
 export default Main;
