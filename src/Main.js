@@ -18,8 +18,8 @@ const Main = () => {
   };
 
   const usun = (id) => {
-    const 
-  }
+    const updatedNotes = notes.filter((none) => notes.id !== id);
+  };
 };
 
 export default Main;
