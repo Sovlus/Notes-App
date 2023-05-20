@@ -4,7 +4,7 @@ import { FaTrash } from "react-icons/fa";
 
 const Main = () => {
   const [notes, setNotes] = useState([]);
-  const [inputValue, setImportValue] = useState("");
+  const [inputValue, setInputValue] = useState("");
 
   const dodajNotatke = () => {
     if (inputValue.trim() !== "") {
