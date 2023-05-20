@@ -21,6 +21,12 @@ const Main = () => {
     const updatedNotes = notes.filter((none) => notes.id !== id);
     setNotes(updatedNotes);
   };
+
+  return (
+    <div className='Main'>
+      <h1>Notes</h1>
+    </div>
+  );
 };
 
 export default Main;
