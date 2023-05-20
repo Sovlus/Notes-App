@@ -25,6 +25,14 @@ const Main = () => {
   return (
     <div className='Main'>
       <h1>Notes</h1>
+      <div className="input">
+        <input
+        type="text"
+        placeholder="twoja treść"
+        value={inputValue}
+        onChange={(e) setInputValue(e.target.value)}
+        />
+      </div>
     </div>
   );
 };
