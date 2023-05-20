@@ -12,6 +12,8 @@ const Main = () => {
         id: uuidv4(),
         content: inputValue,
       };
+      setNotes([...notes, nowa]);
+      setInputValue("");
     }
   };
 };
