@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { FaTrash } from "react-icons/fa";
+import "./App.css";
 
 const Main = () => {
   const [notes, setNotes] = useState([]);
