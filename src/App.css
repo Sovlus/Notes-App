@@ -41,6 +41,7 @@ h1 {
   touch-action: manipulation;
   vertical-align: middle;
   margin-top: 8vh;
+  margin-bottom: 3vh;
 }
 
 .butt:hover,
@@ -67,4 +68,23 @@ input {
   width: 15vh;
   height: 5vh;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.trash {
+  float: right;
+}
+
+.note {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.note p {
+  margin-right: 2vh;
 }
