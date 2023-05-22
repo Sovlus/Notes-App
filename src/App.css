@@ -52,3 +52,9 @@ h1 {
 .butt:active {
   opacity: 0.5;
 }
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
