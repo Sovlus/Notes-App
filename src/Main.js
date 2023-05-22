@@ -34,6 +34,15 @@ const Main = () => {
     setNotes(updatedNotes);
   };
 
+  const getRandomColor = () => {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  };
+
   return (
     <div className='Main'>
       <h1>Notes</h1>
