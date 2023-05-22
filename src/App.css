@@ -95,15 +95,3 @@ input {
   flex-wrap: wrap;
   width: 140vh;
 }
-
-.note:nth-child(1) {
-  background-color: #f9d6c1;
-}
-
-.note:nth-child(2) {
-  background-color: #c7e9c0;
-}
-
-.note:nth-child(3) {
-  background-color: #b9d8eb;
-}
