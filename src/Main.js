@@ -6,6 +6,7 @@ import "./App.css";
 const Main = () => {
   const [notes, setNotes] = useState([]);
   const [inputValue, setInputValue] = useState("");
+  const [noteColors, setNoteColors] = useState({});
 
   const dodajNotatke = () => {
     if (inputValue.trim() !== "") {
@@ -13,7 +14,9 @@ const Main = () => {
         id: uuidv4(),
         content: inputValue,
       };
+      const color = getRandomColor();
       setNotes([...notes, nowa]);
+      setNoteColors({ ...noteColors, [nowa.id]: color });
       setInputValue("");
     }
   };
@@ -32,6 +35,8 @@ const Main = () => {
   const usun = (id) => {
     const updatedNotes = notes.filter((note) => note.id !== id);
     setNotes(updatedNotes);
+    const { [id]: deletedColor, ...restColors } = noteColors;
+    setNoteColors(restColors);
   };
 
   const getRandomColor = () => {
@@ -62,7 +67,7 @@ const Main = () => {
           <div
             className='note'
             key={note.id}
-            style={{ backgroundColor: getRandomColor() }}
+            style={{ backgroundColor: noteColors[note.id] || getRandomColor() }}
           >
             <p>{note.content}</p>
             <button className='trash' onClick={() => usun(note.id)}>
