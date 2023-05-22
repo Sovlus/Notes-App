@@ -44,13 +44,15 @@ const Main = () => {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />
-        <button onClick={dodajNotatke}>Dodaj Notatke</button>
+        <button className='butt' onClick={dodajNotatke}>
+          Dodaj Notatke
+        </button>
       </div>
       <div className='notes'>
         {notes.map((note) => (
           <div className='note' key={note.id}>
             <p>{note.content}</p>
-            <button className='butt' onClick={() => usun(note.id)}>
+            <button onClick={() => usun(note.id)}>
               <FaTrash />
             </button>
           </div>

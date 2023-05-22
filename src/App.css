@@ -12,6 +12,7 @@
 }
 
 h1 {
+  font-size: 50px;
 }
 
 .butt {
@@ -40,7 +41,7 @@ h1 {
 }
 
 .butt:hover,
-.but-24:active {
+.butt:active {
   background-color: initial;
   background-position: 0 0;
   color: #ff4742;
