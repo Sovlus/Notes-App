@@ -58,10 +58,14 @@ const Main = () => {
         </button>
       </div>
       <div className='notes'>
-        {notes.map((note) => (
-          <div className='note' key={note.id}>
+        {notes.map((note, index) => (
+          <div
+            className='note'
+            key={note.id}
+            style={{ backgroundColor: getRandomColor() }}
+          >
             <p>{note.content}</p>
-            <button classname='trash' onClick={() => usun(note.id)}>
+            <button className='trash' onClick={() => usun(note.id)}>
               <FaTrash />
             </button>
           </div>
