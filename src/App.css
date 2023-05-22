@@ -9,12 +9,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 80vh;
 }
 
 h1 {
   font-size: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 .butt {
@@ -82,8 +82,28 @@ input {
   flex-grow: 1;
   justify-content: space-between;
   padding: 10px;
+  margin-right: 2vh;
 }
 
 .note p {
   margin-right: 2vh;
+}
+
+.notes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 140vh;
+}
+
+.note:nth-child(1) {
+  background-color: #f9d6c1;
+}
+
+.note:nth-child(2) {
+  background-color: #c7e9c0;
+}
+
+.note:nth-child(3) {
+  background-color: #b9d8eb;
 }
