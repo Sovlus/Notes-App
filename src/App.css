@@ -40,6 +40,7 @@ h1 {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
+  margin-top: 8vh;
 }
 
 .butt:hover,
@@ -57,4 +58,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+input {
+  border: none;
+  align-items: center;
+  text-align: center;
 }
