@@ -3,3 +3,10 @@
   box-sizing: border-box;
   padding: 0;
 }
+
+.Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
