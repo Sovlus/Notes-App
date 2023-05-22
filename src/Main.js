@@ -49,7 +49,7 @@ const Main = () => {
         {notes.map((note) => (
           <div className='note' key={note.id}>
             <p>{note.content}</p>
-            <button onClick={() => usun(note.id)}>
+            <button className='butt' onClick={() => usun(note.id)}>
               <FaTrash />
             </button>
           </div>
